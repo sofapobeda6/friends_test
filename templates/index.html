@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Тест на лучшего друга{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Насколько хорошо тебя знают друзья?</h1>
+    <p class="subtitle">Создай тест о себе и проверь, кто из друзей угадает тебя лучше всех</p>
+    
+    <a href="{{ url_for('create_quiz') }}" class="button">Создать тест</a>
+    <div style="margin-top: 1px;">
+    <a href="{{ url_for('create_acount') }}" class="button">Регистрация</a>
+    </div>
+    <div style="margin-top: 1px;">
+    <a href="{{ url_for('acount') }}" class="button">Вход</a>
+    </div>
+    <div style="margin-top: 1px;">
+    <a href="{{ url_for('profile') }}" class="button">Профиль</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Создание аккаунта - Лучший друг{% endblock %}
+
+{% block content %}
+<div class="container create-quiz-container">
+    <h1>Заполни информацию о себе</h1>
+    <form class="body">
+        <div class="container">
+            <input type="text" name="userName" placeholder="Введите имя" size="18" />
+            <input type="text" name="userPassword" placeholder="Введите пароль" size="18" maxlength="8" />
+            <input type="text" name="userEmail" placeholder="Введите почту" size="18" />
+                <button type="submit">Отправить</button> 
+                <button type="reset">Отмена</button>
+            </div>
+        </form>
+    <a href="{{ url_for('index') }}" class="back-button">← На главную</a>
+</div>
+{% endblock %}

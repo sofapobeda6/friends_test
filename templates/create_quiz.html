@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Создание теста - Лучший друг{% endblock %}
+
+{% block content %}
+<div class="container create-quiz-container">
+    <h1>Расскажи о себе</h1>
+    <div class="message">
+        Честно ответь на вопросы —<br>
+        так твои друзья смогут тебя угадать!
+    </div>
+    <div class="instructions">
+        <h3>Как это работает:</h3>
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-text">Ты отвечаешь на 10 вопросов о себе</div>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-text">Отправляешь ссылку друзьям</div>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-text">Друзья угадывают твои ответы</div>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-text">Ты видишь таблицу результатов — кто знает тебя лучше</div>
+        </div>
+    <a href="{{ url_for('index') }}" class="back-button">На главную</a>
+    <a href="{{ url_for('test') }}" class="back-button">Тест</a>
+</div>
+{% endblock %}

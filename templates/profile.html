@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Профиль{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Профиль</h1>
+    <p class="subtitle">Таблица результатов</p>
+    
+    <a href="{{ url_for('acount') }}" class="button">Вход</a>
+    <div style="margin-top: 1px;">
+    <a href="{{ url_for('create_acount') }}" class="button">Регистрация</a>
+        </div>
+    <a href="{{ url_for('logout') }}" class="button">Выход</a>
+    </div>
+</div>
+{% endblock %}
