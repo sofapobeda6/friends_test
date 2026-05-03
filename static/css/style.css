@@ -157,7 +157,6 @@ h1 {
 
 .back-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
 }
 
 @media (max-width: 600px) {
@@ -172,4 +171,21 @@ h1 {
     .step-text, .message {
         font-size: 0.9em;
     }
+}
+
+.flash-message {
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.flash-message.success {
+    background-color: #d9f1df;
+    color: #0f4d1d;
+}
+
+.flash-message.error {
+    background-color: #f1d9db;
+    color: #7a1923;
 }
